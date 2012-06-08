@@ -222,7 +222,7 @@
 		};
 		
 		base.buildSlug = function(text){
-			text = text.toLowerCase().replace(/[^a-z0-9 -]/gi,'').replace(/ /gi,'-');
+			text = text.toLowerCase().replace(/ /gi,'-');
 			text = text.substr(0,50);
 			return text;
 		};
